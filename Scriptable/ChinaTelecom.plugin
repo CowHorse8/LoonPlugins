@@ -1,0 +1,12 @@
+#!name = 中国联通小程序
+#!desc = 中国联通小程序配合Scriptable使用，https://github.com/anker1209/Scriptable?tab=readme-ov-file
+#!author = @CowHorse8 @anker1209
+#!homepage = https://github.com/CowHorse8/LoonPlugins
+#!icon = https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/icons/ChinaUnicom.png
+
+[Mitm]
+hostname = e.dlife.cn
+
+[Script]
+# 电信登录地址
+http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle script-path=https://raw.githubusercontent.com/dompling/Script/master/10000/index.js, tag=电信登录地址, requires-body=true, timeout=60
