@@ -1,0 +1,13 @@
+#!name = 🔴 网上国网
+#!desc = 95598(借用 @Yuheng0101 大佬脚本更改，调整了接口返回的内容，增加去年的用电量)
+#!author = @CowHorse8 @小白脸|𝐎𝐍𝐙𝟑𝐕
+#!homepage = https://github.com/CowHorse8/LoonPlugins
+#!icon = https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/icons/wsgw.png
+
+
+[Script]
+# 接口重写
+http-request ^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/wsgw/wsgw.js, requires-body=true, timeout=60
+
+[Mitm]
+hostname = api.wsgw-rewrite.com
