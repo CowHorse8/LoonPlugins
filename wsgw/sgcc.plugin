@@ -1,0 +1,12 @@
+#!name = CaiYunWeatherSvip
+#!desc = 解锁CaiYunWeather Svip及去广告(需登录，旧版 ≤ 7.20.2)
+#!author = @CowHorse8 @ddgksf2013
+#!homepage = https://github.com/CowHorse8/LoonPlugins
+#!icon = https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/icons/wsgw.png
+
+[Script]
+# 导入国家电网小组件脚本
+http-request ^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/wsgw/sgcc.js, requires-body=true, timeout=60
+
+[Mitm]
+hostname = api.wsgw-rewrite.com
