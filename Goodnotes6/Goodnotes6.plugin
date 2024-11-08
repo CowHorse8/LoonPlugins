@@ -2,7 +2,7 @@
 #!desc = 解锁 Goodnotes6
 #!author = @CowHorse8
 #!homepage = https://github.com/CowHorse8/LoonPlugins
-#!icon = https://github.com/CowHorse8/LoonPlugins/blob/main/icons8-goodnotes-150.png
+#!icon = https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/icons/icons8-goodnotes-150.png
 
 [Script]
 # goodnotes6 HTTP 响应处理脚本
