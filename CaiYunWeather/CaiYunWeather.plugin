@@ -4,35 +4,35 @@ hostname = wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn, ad.cyapi.c
 
 [Script]
 # 伪装VIP解锁48小时降水（需登录，旧版 ≤ 7.20.2）
-http-response ^https?:\/\/biz\.cyapi\.cn\/api\/v\d\/user_detail script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js, requires-body=true, timeout=10, tag=彩云天气_解锁48小时降水1
-http-response ^https?:\/\/biz\.cyapi\.cn\/v\d\/user script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js, requires-body=true, timeout=10, tag=彩云天气_解锁48小时降水2
+http-response ^https?:\/\/biz\.cyapi\.cn\/api\/v\d\/user_detail script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/CaiYunWeather/CaiYunWeather_json.js, requires-body=true, timeout=10, tag=彩云天气_解锁48小时降水1
+http-response ^https?:\/\/biz\.cyapi\.cn\/v\d\/user script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/CaiYunWeather/CaiYunWeather_json.js, requires-body=true, timeout=10, tag=彩云天气_解锁48小时降水2
 
 # 图层推广
-http-response ^https?:\/\/wrapper\.cyapi\.cn\/v\d\/activity script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js, requires-body=true, timeout=10, tag=彩云天气_图层推广
+http-response ^https?:\/\/wrapper\.cyapi\.cn\/v\d\/activity script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/CaiYunWeather/CaiYunWeather_json.js, requires-body=true, timeout=10, tag=彩云天气_图层推广
 
 # 活动推广
-http-response ^https?:\/\/api\.caiyunapp\.com\/v\d\/activity script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js, requires-body=true, timeout=10, tag=彩云天气_活动推广
+http-response ^https?:\/\/api\.caiyunapp\.com\/v\d\/activity script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/CaiYunWeather/CaiYunWeather_json.js, requires-body=true, timeout=10, tag=彩云天气_活动推广
 
 # 首页顶部推广
-http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/homefeatures script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js, requires-body=true, timeout=10, tag=彩云天气_首页顶部推广
+http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/homefeatures script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/CaiYunWeather/CaiYunWeather_json.js, requires-body=true, timeout=10, tag=彩云天气_首页顶部推广
 
 # SVIP提醒推广
-http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/notification/message_center script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js, requires-body=true, timeout=10, tag=彩云天气_SVIP提醒推广
+http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/notification/message_center script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/CaiYunWeather/CaiYunWeather_json.js, requires-body=true, timeout=10, tag=彩云天气_SVIP提醒推广
 
 # 雨季特惠提醒
-http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/config/cypage script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js, requires-body=true, timeout=10, tag=彩云天气_雨季特惠提醒
+http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/config/cypage script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/CaiYunWeather/CaiYunWeather_json.js, requires-body=true, timeout=10, tag=彩云天气_雨季特惠提醒
 
 # 发现页信息流推荐
-http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/feeds script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js, requires-body=true, timeout=10, tag=彩云天气_发现页信息流推荐
+http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/feeds script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/CaiYunWeather/CaiYunWeather_json.js, requires-body=true, timeout=10, tag=彩云天气_发现页信息流推荐
 
 # 发现页banners
-http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/banners script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js, requires-body=true, timeout=10, tag=彩云天气_发现页banners
+http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/banners script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/CaiYunWeather/CaiYunWeather_json.js, requires-body=true, timeout=10, tag=彩云天气_发现页banners
 
 # 发现页中间部分
-http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/features script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js, requires-body=true, timeout=10, tag=彩云天气_发现页中间部分
+http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/features script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/CaiYunWeather/CaiYunWeather_json.js, requires-body=true, timeout=10, tag=彩云天气_发现页中间部分
 
 # 发现页活动
-http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/campaigns script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js, requires-body=true, timeout=10, tag=彩云天气_发现页活动
+http-response ^https?:\/\/starplucker\.cyapi\.cn\/v\d/campaigns script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/CaiYunWeather/CaiYunWeather_json.js, requires-body=true, timeout=10, tag=彩云天气_发现页活动
 
 [MITM]
 # 指定MITM域名，以便解密HTTPS流量
