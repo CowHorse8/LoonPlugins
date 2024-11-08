@@ -1,8 +1,8 @@
-#!name = 中国联通小程序
-#!desc = 中国联通小程序配合Scriptable使用，https://github.com/anker1209/Scriptable?tab=readme-ov-file
+#!name = 中国电信cookie
+#!desc = 中国电信cookie配合Scriptable使用，https://github.com/anker1209/Scriptable?tab=readme-ov-file
 #!author = @CowHorse8 @anker1209
 #!homepage = https://github.com/CowHorse8/LoonPlugins
-#!icon = https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/icons/ChinaUnicom.png
+#!icon = https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/icons/ChinaTelecom.png
 
 [Mitm]
 hostname = e.dlife.cn
