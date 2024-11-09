@@ -1,0 +1,13 @@
+#!name = JDcookie
+#!desc = 获取JDcookie
+#!author = @CowHorse8 @2Ya
+#!homepage = https://github.com/CowHorse8/LoonPlugins
+#!icon = https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/icons/JD.png
+
+
+[Script]
+
+http-request https:\/\/api\.m\.jd\.com\/\?.*functionId=queryJDUserInfo tag=获取京东Cookie, script-path=https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_cookie.js
+
+[Mitm]
+hostname = api.m.jd.com
