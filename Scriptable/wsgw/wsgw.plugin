@@ -6,7 +6,8 @@
 #!icon = https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/icons/wsgw.png
 
 [Script]
-接口重写 = type=http-request, pattern=^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all, script-path=https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js, requires-body=true, max-size=-1, timeout=60
+#接口重写 
+http-request ^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all, script-path=https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js, tag=接口重写, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
 hostname = api.wsgw-rewrite.com
