@@ -13,4 +13,4 @@ http-response ^https?:\/\/.+(pcs\.baidu\.com|baidu\.com)\/rest\/2\.0\/pcs\/file\
 
 [MITM]
 # 指定MITM域名，以便解密HTTPS流量
-hostname = pan。baidu。com, *.pcs。baidu.com, *.baidu.com
+hostname = pan.baidu.com, *.pcs.baidu.com, *.baidu.com
