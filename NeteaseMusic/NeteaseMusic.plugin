@@ -1,0 +1,34 @@
+#!name = 网易云音乐解锁
+#!desc = 解锁网易云音乐灰色歌曲和会员皮肤，脚本源自 annyehttp。
+#!author = @anyehttp
+#!homepage = https://github.com/anyehttp/quantumult-x
+#!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Cloud_Music.png
+
+[Script]
+# 解锁会员皮肤
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/playermode\/, script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, tag=网易云-播放器会员皮肤
+
+# 解锁搜索结果
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/search\/complex\/(page|rec\/song\/get), script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, tag=网易云-搜索结果会员歌曲
+
+# 解锁播放详情
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/v3\/song\/detail, script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, tag=网易云-播放器会员歌曲1
+
+# 解锁其他播放相关
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/song\/(chorus|enhance\/|play\/|type\/detail\/get), script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, tag=网易云-播放器会员歌曲2
+
+# 解锁推荐和歌手页
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/(v1\/artist\/top\/song|v3\/discovery\/recommend\/songs), script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, tag=网易云-播放器会员歌曲3
+
+# 解锁侧边栏会员等级
+http-request ^https:\/\/interface3?\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage, script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, tag=网易云-侧边栏会员等级
+
+# 解锁歌单
+http-request ^https?:\/\/interface3?\.music\.163\.com\/eapi\/(homepage\/|v6\/)?playlist\/, script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, tag=网易云-首页歌单会员歌曲
+
+# 会员认证
+http-request ^https?:\/\/interface3?\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query, script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/headers/wyy.js, tag=网易云-会员认证
+
+[MITM]
+# 指定MITM域名
+hostname = *.music.163.com
