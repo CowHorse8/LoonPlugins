@@ -1,0 +1,13 @@
+#!name = 夸克网盘/解锁SVIP
+#!desc = 夸克网盘/解锁SVIP
+#!author = @CowHorse8 @https://t.me/Tmxios
+#!homepage = https://github.com/CowHorse8/LoonPlugins
+#!icon = https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/icons/Kuake.png
+
+[Script]
+# 规则1：修改服务器返回的用户信息，解锁会员界面和功能
+http-response ^https?:\/\/drive.*\.quark\.cn\/.+\/clouddrive\/(member.+|distribute\/detail.+|capacity\/growth\/info) script-path=https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/Kuake/Kuake.js, requires-body=true, timeout=10, tag=解锁SVIP
+
+[MITM]
+# 指定MITM域名，以便解密HTTPS流量
+hostname = drive*.quark.cn
