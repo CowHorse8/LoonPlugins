@@ -2,7 +2,7 @@
 #!desc = 解锁网易云音乐灰色歌曲和会员皮肤，脚本源自 annyehttp。
 #!author = @anyehttp
 #!homepage = https://github.com/anyehttp/quantumult-x
-#!icon = https://raw.githubusercontent.com/CowHorse8/LoonPlugins/blob/main/icons/wyy.png
+#!icon = https://raw.githubusercontent.com/CowHorse8/LoonPlugins/main/icons/wyy.png
 
 [Script]
 # 解锁会员皮肤
